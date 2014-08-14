@@ -17,6 +17,8 @@
       <ul class="nav navbar-nav search-lockup">
         <li class="search-group">
           <input class="search-input" placeholder="Search for artists or song">
+          {{input type="text" class="search-input" placeholder="Search for artist or songs" }}
+          
           <button class="btn btn-primary">
             <i class="glyphicon glyphicon-play"></i>
           </button>
@@ -30,10 +32,8 @@
   
   <div class="container-fluid">
     <div class="row-fluid">
-      Page Content ...
-      Test
-      
-      <!-- page content here -->    
+    <!-- page content here -->
+      {{outlet}}
     </div>
   </div> <!-- container-fluid -->
 
