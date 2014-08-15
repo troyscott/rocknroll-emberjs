@@ -19,7 +19,11 @@
         <h3>Artists</h3>
         <ul class="search-results artists">
           {{#each RocknrollcallYeoman.dummySearchResultsArtists}}
+          {{#if nicknae}}
             <li><a href="#">{{name}}, AKA "{{nickname}}"</a></li>
+          {{else}}
+            <li><a href"#">{{name}}</a></li>
+          {{/if}}
           {{/each}}
         
         </ul>
