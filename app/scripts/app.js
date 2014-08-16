@@ -1,4 +1,8 @@
-var RocknrollcallYeoman = window.RocknrollcallYeoman = Ember.Application.create();
+var RocknrollcallYeoman = window.RocknrollcallYeoman = Ember.Application.create({
+ LOG_TRANSITIONS: true,
+ LOG_ACTIVE_GENERATION: true
+
+});
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
@@ -28,34 +32,3 @@ Ember.Handlebars.helper('hotttnesss-badge', function(value, options) {
   }
   return new Handlebars.SafeString(html);
 });
-
-
-RocknrollcallYeoman.dummySearchResultsArtists = 
-[
-  {
-    id: 1,
-    name: 'Tom Waits',
-    type: 'artist',
-    enid: 'ARERLPG1187FB3BB39',
-    hotttness: '1'
-    
-  },
-  
-  {
-    id: 2,
-    name: 'Thomas Alan Waits',
-    type: 'artists',
-    enid: 'ARELPG1187FB3BB39',
-    hotttness: '.89'
-  },
-  
-  {
-    id: 3,
-    name: 'Tome Waits w/ Keith Richards',
-    type: 'artist',
-    endid: 'ARMPVNN13CA39CF8FC',
-    hotttness: '.79'
-    
-  }
-]
-
